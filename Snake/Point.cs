@@ -46,6 +46,7 @@ namespace Snake
             }
         }
 
+
         public override string ToString()
         {
             return x+", "+y+", "+sym;
@@ -55,6 +56,12 @@ namespace Snake
         {
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
+        }
+
+        public void Clear()
+        {
+            sym = ' ';
+            Draw();
         }
         
     }
